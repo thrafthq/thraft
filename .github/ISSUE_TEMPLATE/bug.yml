@@ -1,0 +1,31 @@
+name: Bug report
+description: Something in Thraft is broken or behaves in a way you did not expect.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you can make it happen again, list the steps.
+      placeholder: |
+        1. Open a plan
+        2. ...
+  - type: textarea
+    id: report
+    attributes:
+      label: The report from Thraft
+      description: In Thraft, choose Thraft > Report a Bug, click Copy report, and paste the text here. It holds the version, the end of the log, and the newest crash report. It never holds your plans, your database, your settings, or anything in the keychain.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Only if you could not paste the report. Thraft > About Thraft shows it.
+      placeholder: "0.1.22"

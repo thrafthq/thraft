@@ -1,0 +1,21 @@
+name: Feature request
+description: Something Thraft does not do yet, or does in a way that gets in your way.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: What you were trying to do
+      description: The task, and where Thraft got in the way or fell short.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: Your idea for a fix, if you have one.
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: Screenshots, links, or how you work around it today.
